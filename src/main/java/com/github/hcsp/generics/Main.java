@@ -6,22 +6,4 @@ public class Main {
     public static <T extends Comparable> boolean inAscOrder(T a, T b, T c) {
         return a.compareTo(b) <= 0 && b.compareTo(c) <= 0;
     }
-
-    public static boolean inAscOrder1(int a, int b, int c) {
-        return a <= b && b <= c;
-    }
-
-    public static boolean inAscOrder2(long a, long b, long c) {
-        return a <= b && b <= c;
-    }
-
-    public static boolean inAscOrder3(double a, double b, double c) {
-        return a <= b && b <= c;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(inAscOrder1(1, 2, 3));
-        System.out.println(inAscOrder2(1L, 2L, 3L));
-        System.out.println(inAscOrder3(1d, 2d, 3d));
-    }
 }
