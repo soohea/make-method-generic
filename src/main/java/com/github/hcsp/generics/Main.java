@@ -5,19 +5,15 @@ public class Main {
     // 范型化之后的方法签名应该如下所示：
     // public static boolean inAscOrder(T a, T b, T c)
     public static boolean inAscOrder1(int a, int b, int c) {
-        return inAscOrder(a, b, c);
+        return a <= b && b <= c;
     }
 
     public static boolean inAscOrder2(long a, long b, long c) {
-        return inAscOrder(a, b, c);
+        return a <= b && b <= c;
     }
 
     public static boolean inAscOrder3(double a, double b, double c) {
-        return inAscOrder(a, b, c);
-    }
-
-    public static <T extends Comparable<T>> boolean inAscOrder(T a, T b, T c) {
-        return a.compareTo(b) <= 0 && b.compareTo(c) <= 0;
+        return a <= b && b <= c;
     }
 
     public static void main(String[] args) {
