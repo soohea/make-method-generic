@@ -1,6 +1,6 @@
-# 编写范型化的方法
+# 编写泛型化的方法
 
-[`Main`](https://github.com/hcsp/make-method-generic/blob/master/src/main/java/com/github/hcsp/generics/Main.java)中有一些方法重复了，请将其范型化。
+[`Main`](https://github.com/hcsp/make-method-generic/blob/master/src/main/java/com/github/hcsp/generics/Main.java)中有一些方法重复了，请将其泛型化。
 
 在提交Pull Request之前，你应当在本地确保所有代码已经编译通过，并且通过了测试(`mvn clean test`)
 
