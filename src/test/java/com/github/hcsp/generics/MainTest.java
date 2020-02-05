@@ -8,6 +8,6 @@ public class MainTest {
     public static void main(String[] args) {
         Assertions.assertTrue(Main.inAscOrder(1, 2, 3));
         Assertions.assertTrue(Main.inAscOrder(1L, 2L, 3L));
-        Assertions.assertTrue(Main.inAscOrder(1L, 2L, 3L));
+        Assertions.assertTrue(Main.inAscOrder(1d, 2d, 3d));
     }
 }
