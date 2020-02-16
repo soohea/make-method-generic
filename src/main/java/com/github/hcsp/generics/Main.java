@@ -5,6 +5,7 @@ public class Main {
     // 泛型化之后的方法签名应该如下所示：
     // public static boolean inAscOrder(T a, T b, T c)
     public static <T extends Comparable<T>> boolean inAscOrder(T a, T b, T c) {
+
         return (a.compareTo(b) <= 0) && (b.compareTo(c) <= 0);
     }
 
