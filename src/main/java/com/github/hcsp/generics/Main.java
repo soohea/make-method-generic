@@ -16,13 +16,9 @@ public class Main {
         return a <= b && b <= c;
     }
 
-    public static <T extends Comparable<? super T>> boolean inAscOrder(T a, T b, T c) {
-        return a.compareTo(b) <= 0 && b.compareTo(c) <= 0;
-    }
-
     public static void main(String[] args) {
-        System.out.println(inAscOrder(1, 2, 3));
-        System.out.println(inAscOrder(1L, 2L, 3L));
-        System.out.println(inAscOrder(1d, 2d, 3d));
+        System.out.println(inAscOrder1(1, 2, 3));
+        System.out.println(inAscOrder2(1L, 2L, 3L));
+        System.out.println(inAscOrder3(1d, 2d, 3d));
     }
 }
