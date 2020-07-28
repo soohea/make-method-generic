@@ -16,6 +16,9 @@ public class Main {
         return a <= b && b <= c;
     }
 
+    public static <T extends Comparable> boolean inAscOrder(T a, T b, T c) {
+        return a.compareTo(b) <= 0 && b.compareTo(c) <= 0;
+    }
     public static void main(String[] args) {
         System.out.println(inAscOrder1(1, 2, 3));
         System.out.println(inAscOrder2(1L, 2L, 3L));
