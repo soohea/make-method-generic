@@ -21,8 +21,4 @@ public class Main {
         System.out.println(inAscOrder2(1L, 2L, 3L));
         System.out.println(inAscOrder3(1d, 2d, 3d));
     }
-
-    public static <T extends Comparable<T>> boolean inAscOrder(T a, T b, T c) {
-        return (a.compareTo(b) <= 0 && b.compareTo(c) <= 0);
-    }
 }
